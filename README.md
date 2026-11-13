@@ -24,7 +24,7 @@ Without downloading script (needs curl):
 curl -s https://raw.githubusercontent.com/snaeil/crate2epub/refs/heads/main/crate2epub.sh | bash -s -- <crate-name> [version]
 ```
 
-You will then find the created `epub` with name `` at the current directory.
+You will then find the created `epub` with name `<crate>-<version>-docs.epub` or `<crate>-docs.epub` at the current directory.
 
 Example:
 
