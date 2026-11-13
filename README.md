@@ -12,13 +12,23 @@ You must have installed:
 
 ## Usage
 
+With downloading script `crate2epub.sh`:
+
 ```bash
-curl -s https://raw.githubusercontent.com/snaeil/crate2epub/refs/heads/main/crate2epub.sh | bash  <crate-name> [version]
+./crate2epub.sh <crate-name> [version]
 ```
+
+Without downloading script (needs curl):
+
+```bash
+curl -s https://raw.githubusercontent.com/snaeil/crate2epub/refs/heads/main/crate2epub.sh | bash -s -- <crate-name> [version]
+```
+
+You will then find the created `epub` with name `` at the current directory.
 
 Example:
 
 ```bash
-curl -s https://raw.githubusercontent.com/snaeil/crate2epub/refs/heads/main/crate2epub.sh | bash axum 0.8.9
+curl -s https://raw.githubusercontent.com/snaeil/crate2epub/refs/heads/main/crate2epub.sh | bash -s -- axum 0.8.9
 ```
 
